@@ -3,7 +3,7 @@ import { Pressable, Text, View } from "react-native"
 
 
 
-const CategoryGridTitle = ({title, color}) => {
+const CategoryGridTile = ({title, color}) => {
     return <View>
         <Pressable>
             <View>
@@ -15,4 +15,4 @@ const CategoryGridTitle = ({title, color}) => {
     </View>
 }
 
-export default CategoryGridTitle;
+export default CategoryGridTile;
