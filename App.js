@@ -1,18 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import CategoriesScreen from './screen/CategoriesScreen';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import CategoriesScreen from "./screen/CategoriesScreen";
 
 export default function App() {
   return (
-    <CategoriesScreen></CategoriesScreen>
+    <>
+      <StatusBar style="light"></StatusBar>
+      <CategoriesScreen></CategoriesScreen>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
