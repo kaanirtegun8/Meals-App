@@ -7,11 +7,11 @@ import {
   Pressable,
 } from "react-native";
 
-const MealItem = ({ meal }) => {
+const MealItem = ({ meal, onPress }) => {
   return (
     <View style={styles.container}>
       <Pressable
-      
+        onPress={onPress}
         style={ ({pressed}) => [styles.innerContainer, pressed ? styles.pressed : null]}
         android_ripple={{ color: "#ccc" }}
       >
