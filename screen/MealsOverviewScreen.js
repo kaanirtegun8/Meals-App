@@ -1,5 +1,4 @@
-import { useNavigation } from "@react-navigation/native";
-import { View, StyleSheet, Text, FlatList } from "react-native";
+import { View, StyleSheet, FlatList } from "react-native";
 import MealItem from "../components/MealItem";
 import { MEALS } from "../data/dummy-data";
 
@@ -10,11 +9,13 @@ const MealsOverviewScreen = ({ route, navigation }) => {
     return meals.categoryIds.includes(catId)
   })
 
+  
+
 
   const renderMealItem = (itemData) => {
     const pressHandler = () => {
       navigation.navigate('MealDetailPage',{
-        mealId: itemData.item.id
+        meal: itemData.item
       })
     }
 
